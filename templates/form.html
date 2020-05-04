@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block content %}
+<form method="GET" action="/exec" style="background-color: darkcyan; border-radius: 5px; font-family: 'Courier New', Courier, monospace; size: 20px; padding: 20px; width: 30%;">
+    <p>
+    {{form.loc.label}} <br>
+    {{form.loc(placeholder="Location Name Here")}}
+    <!--input type="text" id="lname" name="locationname" placeholder="Location name.."-->
+</p>    
+<p>
+    {{form.proj.label}} <br>
+    {{form.proj(placeholder="Project Name Here")}}
+    </p>
+    <p>
+        {{form.ext.label}} <br>
+        {{form.ext(placeholder="Extent Here")}}
+       </p> 
+       <p>
+        {{form.uname.label}} <br>
+        {{form.uname(placeholder="Name of the survey enginneer")}}
+       </p> 
+       <p>
+        {{form.email.label}} <br>
+        {{form.email(placeholder="Valid Email ID")}}
+       </p> 
+       <p>
+        {{form.but}} <br>
+    </p>    
+
+<!--div class="container"-->
+
+    <!--label for="pname">Enter Project Name</label>
+    <input type="text" id="pname" name="projectname" placeholder="Project name..">
+
+ 
+    
+<!--/div-->
+
+<!--div class="container"-->
+  
+    <!--label for="extentinkms">Enter extent of survey in kilometres</label>
+    <input type="text" id="extentinkms" name="extentinkms" placeholder="in kms..">
+
+ 
+    <input type="submit" value="Submit">
+  
+</div-->
+</form>
+{% endblock %}
