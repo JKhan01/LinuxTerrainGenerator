@@ -6,6 +6,6 @@ class inputQuery(FlaskForm):
     loc = StringField("Location", validators=[DataRequired()])
     proj = StringField("Project Name", validators=[DataRequired()])
     ext = IntegerField("Extent In KMs", validators=[DataRequired()])
-    uname = StringField(" Survey Officer Name: ", validators=[DataRequired()])
-    email = StringField(" Survey Officer Email: ", validators=[DataRequired(),Email()])
+    # uname = StringField(" Survey Officer Name: ", validators=[DataRequired()])
+    # email = StringField(" Survey Officer Email: ", validators=[DataRequired(),Email()])
     but = SubmitField("Submit")
