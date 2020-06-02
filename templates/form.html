@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<form name="query" method="GET" action="/exec" style="background-color: darkcyan; border-radius: 5px; font-family: 'Courier New', Courier, monospace; size: 20px; padding-left: 20px; width: 40%; float: left; padding-right: 20px;">
+    <h2>Welcome {{data}}. Let's get started!</h2>
+    <label style="font-size: 20px; text-align: right;"><a href="/logout">Logout</a></label>
+    <br><br>
+    <input type="text" name="loc" placeholder="Enter the location of study" required/>
+    <br><br>
+    <input type="text" name = "proj" placeholder="Name of the Project" required/>
+    <br><br>
+    <input type="number" name="ext" placeholder="Extent of Survey in KMs" required/>
+    <br><br>
+    <input type="submit" onclick="return validateInput()" value="Submit">
+    <br><br>
+</form>
+
+{% endblock %}
